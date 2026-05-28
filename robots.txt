@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://devinspector.visionion.dev/sitemap.xml
