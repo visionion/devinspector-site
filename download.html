@@ -31,6 +31,16 @@
     <p style="margin-top:1.5rem"><a class="btn" href="/">← Back to DevInspector</a></p>
   </div>
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ce184bd0e081451ab49d55dccf247430"}'></script>
-  <script>setTimeout(function(){window.location.href="/DevInspector.dmg";},800);</script>
+  <script>
+    if (typeof gtag === 'function') {
+      gtag('event', 'file_download', {
+        app_name: 'DevInspector',
+        file_name: 'DevInspector.dmg',
+        file_extension: 'dmg',
+        link_url: '/DevInspector.dmg'
+      });
+    }
+    setTimeout(function(){window.location.href="/DevInspector.dmg";},800);
+  </script>
 </body>
 </html>
